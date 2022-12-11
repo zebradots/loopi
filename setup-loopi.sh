@@ -37,7 +37,7 @@ perl -p -i -e "s/raspberrypi/loopi/g" /etc/hosts
 perl -p -i -e 's/^#disable_overscan=1$/disable_overscan=1/g' /boot/config.txt
 raspi-config nonint do_wifi_country US
 systemctl enable ssh; systemctl start ssh
-perl -p -i -e "s/^/loopi: Seamless looping video player\nVersion $VER\n/" /etc/issue
+echo "loopi: Seamless looping video player\nVersion $VER" >> /etc/issue
 perl -p -i -e 's/^set compatible$/set nocompatible/g' /etc/vim/vimrc.tiny
 perl -p -i -e 's/^"syntax on$/syntax on/g' /etc/vim/vimrc
 

@@ -15,10 +15,10 @@ function ago($s) {
 	return $from->diff($to)->format('%a days, %h hours, and %i minutes');
 }
 
-$manage_url = "/media/";
+$media_url = "/media/";
 $current = `pgrep -a omxplayer.bin | awk '{print $NF}'`;
 if ($current=='') {
-	$status = "No media playing. Want to <a href='$manage_url' target='_manage'><strong>upload a video</strong></a>?";
+	$status = "No media playing. Want to <a href='$media_url' target='_media'><strong>upload a video</strong></a>?";
 	$busy = false;
 } else {
 	$pid = `pidof omxplayer.bin`;
@@ -50,7 +50,7 @@ if ($current=='') {
 	<div class="container">
 		<div class="grid">
 			<div>
-				<button id="manage" class="outline">Manage media</button>
+				<button id="media" class="outline">Manage media</button>
 			</div>
 			<div>
 				<button id="restart" class="outline">Restart</button>
@@ -61,8 +61,8 @@ if ($current=='') {
 		</div>
 	</div>
 	<script>
-	document.getElementById("manage").onclick = function manage() {
-		window.open("<?=$manage_url;?>");
+	document.getElementById("media").onclick = function media() {
+		window.open("<?=$media_url;?>", "_media");
 	}
 	document.getElementById("restart").onclick = function restart() {
 		location.href = "/control.php?action=restart";

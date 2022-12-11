@@ -56,6 +56,7 @@ apt install --yes \
 	x11-xserver-utils \
 	unclutter \
 	python3-tk \
+	fonts-roboto \
 	omxplayer \
 	hostapd \
 	dnsmasq \

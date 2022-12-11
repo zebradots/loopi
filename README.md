@@ -62,4 +62,4 @@ This solution can be used for digital signage, wayfinding and directional signs,
 
 While <strong>loopi</strong> has you covered for digital signage, you may also want traditional [custom signs, lettering and wall graphics](https://rioprinting.com) to finish your project. The <strong>loopi</strong> project is sponsored by:
 
-(image)
+- <strong>[Rio Creative Signs and Graphics](https://rioprinting.com/)</strong>

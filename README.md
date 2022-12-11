@@ -1,4 +1,4 @@
-<img src="https://github.com/zebradots/loopi/blob/6390d2ff4872d6fe2aa26f079cfb9bc74442b7b7/overlay/var/www/html/assets/logo-purple.png"></img>
+<img src="https://github.com/zebradots/loopi/blob/main/overlay/var/www/html/assets/logo-purple.png"></img>
 
 ## Seamless looped video playback 
 
@@ -21,6 +21,17 @@ This solution can be used for digital signage, wayfinding and directional signs,
 - Simply connect to loopi's WiFi hotspot to update media
 - Media changes detected and applied automatically
 - User friendly and intuitive interface
+
+
+## Screenshots
+
+<div>
+  <p align="center">
+    <img src="https://github.com/zebradots/loopi/blob/main/overlay/var/www/html/images/loopi-countdown.png" width="30%">
+    <img src="https://github.com/zebradots/loopi/blob/main/overlay/var/www/html/images/loopi-status.png" width="30%">
+    <img src="https://github.com/zebradots/loopi/blob/main/overlay/var/www/html/images/loopi-media.png" width="30%">
+  </p>
+</div>
 
 
 ## Requirements

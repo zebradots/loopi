@@ -1,0 +1,20 @@
+# Disable screen blanking/power saving
+xset s off -dpms &
+
+# Set WiFi host AP configuration
+export CONF=/etc/hostapd/hostapd.conf
+export SSID=loopi-`iw dev | grep addr \
+	| awk '{print $2}' | sed 's/://g' \
+	| cut -c 9-12`
+export PASS=`pwgen 8 -A -n1`
+perl -p -i -e "s/^ssid=$/ssid=$SSID/g" $CONF
+perl -p -i -e "s/^wpa_passphrase=$/wpa_passphrase=$PASS/g" $CONF
+
+# Apply new hostapd configuration
+( systemctl restart hostapd ) &
+
+# Start PHP server in detached terminal
+( screen -dmS web php -S 0.0.0.0:80 -t /var/www/html ) &
+
+# Start media playing service
+( screen -dmS svc /root/loopi.py ) &

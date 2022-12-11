@@ -43,7 +43,7 @@ This solution can be used for digital signage, wayfinding and directional signs,
 
 ## Getting started
 
-1. Get the latest image
+1. Download the latest image from [releases](https://github.com/zebradots/loopi/releases), e.g. `loopi-1.X.img.xz`
 1. Write the image to a quality SD card
 	- Windows: Try [Rufus](https://rufus.ie/)
 	- Mac: Use [balenaEtcher](https://www.balena.io/etcher/)

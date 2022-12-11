@@ -71,7 +71,7 @@ This solution can be used for digital signage, wayfinding and directional signs,
 1. `wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh`
 1. `chmod +x pishrink.sh`
 1. `sudo ./pishrink.sh loopi-1.X.img`
-1. `xz -9e loopi-1.X.img`
+1. `xz -9ev loopi-1.X.img`
 
 
 ## Sponsors

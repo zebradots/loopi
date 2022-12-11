@@ -54,6 +54,7 @@ apt install --yes \
 	openbox \
 	xinit \
 	x11-xserver-utils \
+	xterm \
 	unclutter \
 	python3-tk \
 	fonts-roboto \

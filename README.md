@@ -51,7 +51,7 @@ This solution can be used for digital signage, wayfinding and directional signs,
 1. Put the SD card in your Raspberry Pi and reboot
 1. <strong>Note: On first boot, the Pi will enlarge the filesystem to fit the entire SD card and then reboot automatically</strong>
 1. Follow the on-screen instructions to connect your notebook, laptop, phone, or tablet to the WiFi hotspot with the randomly generated password on the screen
-1. On your wireless device, open [http://loopi](http://loopi) and click "Manage media"
+1. On your wireless device, open [http://loo.pi](http://loo.pi) and click "Manage media"
 1. Drag and drop a compatible 1080P video file―it will begin to loop automatically!
 
 

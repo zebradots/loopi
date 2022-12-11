@@ -81,7 +81,7 @@ no-resolv
 interface=wlan0
 dhcp-range=10.0.0.2,10.0.0.10,1h
 server=10.0.0.1
-address=/#/10.0.0.1
+address=/loopi/loo.pi/loopi.local/#/10.0.0.1
 EOF
 
 echo "* Configuring WiFi host access point..."

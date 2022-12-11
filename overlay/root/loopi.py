@@ -82,7 +82,7 @@ class loopi_app():
 		self.text_net.insert("end", " with password ", "normal")
 		self.text_net.insert("end", pw, "bold")
 		self.text_net.insert("2.0", "\nand open ")
-		self.text_net.insert("end", "http://loopi", "bold")
+		self.text_net.insert("end", "http://loo.pi", "bold")
 		self.text_net.insert("end", " to manage media files", "normal")
 		self.text_net.tag_add("center", "2.0", "end")
 		self.text_net.configure(state="disabled", highlightthickness=0, borderwidth=0)

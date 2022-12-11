@@ -43,11 +43,11 @@ This solution can be used for digital signage, wayfinding and directional signs,
 
 ## Getting started
 
-1. Get the latest image from [here](#)
+1. Get the latest image
 1. Write the image to a quality SD card
-	- Linux: `xzcat 2022-09-22-raspios-buster-armhf-lite.img.xz | sudo dd of=/dev/sdX bs=4M oflag=dsync status=progress`
 	- Windows: Try [Rufus](https://rufus.ie/)
 	- Mac: Use [balenaEtcher](https://www.balena.io/etcher/)
+	- Linux: `xzcat loopi-1.X.img.xz | sudo dd of=/dev/sdX bs=4M oflag=dsync status=progress`
 1. Put the SD card in your Raspberry Pi and reboot
 1. Follow the on-screen instructions to connect your notebook, laptop, phone, or tablet to the WiFi hotspot with the randomly generated password on the screen
 1. On your wireless device, open [http://loopi](http://loopi) and click "Manage media"

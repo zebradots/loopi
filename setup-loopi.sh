@@ -104,7 +104,7 @@ echo "* Preparing web UI components..."
 tar zxf vendor/pico-css/v1.5.6.tar.gz pico-1.5.6/css/pico.min.css --strip=1
 /usr/bin/cp --force --recursive --verbose css /var/www/html/
 rm -rf ./css
-unzip vendor/filegator/filegator_latest.zip
+unzip -q vendor/filegator/filegator_latest.zip
 mv filegator /var/www/
 ln -s /var/www/filegator/dist /var/www/html/media
 CONF=/var/www/filegator/configuration.php
@@ -116,6 +116,7 @@ perl -p -i -e "s/'date_format' =.*$/'date_format' => 'MM\/DD\/YY hh:mm:ss',/g" $
 CONF=/var/www/filegator/private/users.json
 cp $CONF.blank $CONF
 perl -p -i -e 's/"permissions":""/"permissions":"read|write|upload|download"/g' $CONF
+sync
 
 echo "* Done installing loopi!"
 echo

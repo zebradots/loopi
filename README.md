@@ -1,5 +1,4 @@
-(logo)
-
+<img src="https://github.com/zebradots/loopi/blob/6390d2ff4872d6fe2aa26f079cfb9bc74442b7b7/overlay/var/www/html/assets/logo-purple.png"></img>
 
 ## Seamless looped video playback 
 

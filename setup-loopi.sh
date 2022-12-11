@@ -20,7 +20,6 @@ if [ "$EUID" -ne 0 ]
 	then echo -e "FATAL ERROR: Must be run as root!\n"
 	exit
 fi
-cd /root
 echo -e "Hardware: $SYSTEM_HW"
 if [[ "$SYSTEM_HW" != *"$TARGET_HW"* ]]; then
 	echo -e "FATAL ERROR: Expected hardware to be $TARGET_HW\n"

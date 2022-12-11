@@ -18,7 +18,6 @@
 #
 
 import os
-import signal
 import hashlib
 import re
 import random, string
@@ -175,7 +174,7 @@ class loopi_app():
 				self.find_files()
 				if not old_hash == file_hash:
 					print("Files have changed. Updating media list.")
-					os.kill(player_pid, signal.SIGTERM)
+					result = subprocess.call("killall -15 omxplayer.bin", shell=True)
 					self.root.state('normal')
 					self.check_media()
 				else:

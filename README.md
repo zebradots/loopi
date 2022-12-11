@@ -67,7 +67,7 @@ This solution can be used for digital signage, wayfinding and directional signs,
     1. `sudo ./setup-loopi.sh` and ensure no errors are reported
     1. `sudo poweroff`
 1. Remove the card, insert it into an SD reader, and ensure partitions are unmounted
-1. `dd if=/dev/sdX of=loopi-1.X.img bs=32M`
+1. `sudo dd if=/dev/sdX of=loopi-1.X.img bs=32M oflag=dsync status=progress`
 1. `wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh`
 1. `chmod +x pishrink.sh`
 1. `sudo ./pishrink.sh loopi-1.X.img`

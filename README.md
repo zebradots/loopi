@@ -57,18 +57,19 @@ This solution can be used for digital signage, wayfinding and directional signs,
 ## Building custom images
 
 1. Install the latest Debian `buster` RaspiOS Lite image to an SD card, e.g.: `xzcat 2022-09-22-raspios-buster-armhf-lite.img.xz | sudo dd of=/dev/sdX bs=4M oflag=dsync status=progress`
-1. Insert the SD card into a Raspberry Pi
+1. Insert the SD card into a Raspberry Pi 3B or 3B+
 1. Power on the Pi, log in as the default user (`pi` with password `raspberry`), and execute the following commands:
     1. `sudo apt update`
     1. `sudo apt install --yes git`
     1. `git clone https://github.com/zebradots/loopi`
     1. `cd loopi`
-    1. `sudo ./setup-loopi.sh`
+    1. `sudo ./setup-loopi.sh` and ensure no errors are reported
     1. `sudo poweroff`
 1. Remove the card, insert it into an SD reader, and ensure partitions are unmounted
 1. `dd if=/dev/sdX of=loopi-1.X.img bs=32M`
 1. `wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh`
-1. `./pishrink.sh loopi-1.X.img`
+1. `chmod +x pishrink.sh`
+1. `sudo ./pishrink.sh loopi-1.X.img`
 1. `xz -9e loopi-1.X.img`
 
 

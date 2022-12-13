@@ -148,14 +148,15 @@ class loopi_app():
 		global p, player_pid, start_time, media
 		refresh = 1000
 		if player_pid == 0:
-			# Execute new playback process that permits keyboard controls
+			# Sync pending write operations before starting playback
+			result = subprocess.call("sync", shell=True)
+			# Execute via terminal to permit keyboard controls
 			cmd = "xterm -fullscreen -fg black -bg black -e omxplayer -r --loop"
 			cmd += " " + media[0]
 			print("Executing: " + cmd)
 			p = Popen(shlex.split(cmd))	# Supports filenames with spaces
 			player_pid = p.pid
 			print("Created new playback process PID:", p.pid)
-			exit
 			self.root.after(refresh, self.monitor_playback)
 		else:
 			# Check status of existing process

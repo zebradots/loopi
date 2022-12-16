@@ -3,7 +3,7 @@
 # Install and configure loopi
 #
 
-VER=1.0
+VER=1.1
 TARGET_HW="Raspberry Pi 3"
 TARGET_OS="buster"
 SYSTEM_HW=$(tr -d '\0' < /sys/firmware/devicetree/base/model)
